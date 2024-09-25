@@ -36,7 +36,7 @@ donateBtn.addEventListener("click", function () {
 
     // History 
     const historyItem = document.createElement("div");
-    historyItem.className = "bg-white p-3 rounded-md border-l-2 border-green-500";
+    historyItem.className = "bg-white mx-6 p-3 rounded-md border-2 border-gray-300";
     historyItem.innerHTML = `
     <p class="text-xl font-bold"> ${amountInput.toFixed(2)} BDT Is Donated for Flood at Noakhali, Bangladesh</p>
         <p class="text-sm p-4 text-gray-400">Date: ${new Date().toString()}</p>
