@@ -13,7 +13,6 @@ donateBtn.addEventListener("click", function () {
 
     if (amountInput <= 0 || isNaN(amountInput)) {
         document.getElementById("donationError").classList.remove("hidden");
-        modal.showModal(); 
         return;
     }
 
@@ -77,3 +76,9 @@ donationTab.addEventListener("click", function () {
     document.getElementById("histry").classList.remove("hidden");
     document.getElementById("historySection").classList.add("hidden");
 });
+
+
+
+
+// section 2 
+
