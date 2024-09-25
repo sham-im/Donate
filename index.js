@@ -80,5 +80,5 @@ donationTab.addEventListener("click", function () {
 
 
 
-// section 2 
+
 
