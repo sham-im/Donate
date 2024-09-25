@@ -8,14 +8,13 @@
 </head>
 <body class="bg-gray-100 text-gray-900">
 
-  <!-- FAQ Section -->
   <section class="container mx-auto py-12 px-6">
     <h1 class="text-4xl font-bold text-gray-800 mb-8">FAQ: Document Object Model (DOM)</h1>
 
     <!-- FAQ Item 1 -->
     <div class="bg-white rounded-lg shadow-md mb-4">
       <button class="w-full text-left p-4 font-semibold text-lg text-gray-800 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring focus:ring-indigo-300 transition duration-150" onclick="toggleFAQ('faq1')">
-        What is the DOM?
+        What is the Document Object Model (DOM)?
       </button>
       <div id="faq1" class="p-4 text-gray-600 hidden">
         <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. Essentially, the DOM makes web pages dynamic, allowing them to respond to user actions, such as clicks, form submissions, or mouse movements.</p>
@@ -25,40 +24,30 @@
     <!-- FAQ Item 2 -->
     <div class="bg-white rounded-lg shadow-md mb-4">
       <button class="w-full text-left p-4 font-semibold text-lg text-gray-800 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring focus:ring-indigo-300 transition duration-150" onclick="toggleFAQ('faq2')">
-        How do you access the DOM in JavaScript?
+        How do you select an element from the DOM?
       </button>
       <div id="faq2" class="p-4 text-gray-600 hidden">
-        <p>You can access and manipulate the DOM using JavaScript through methods such as <code>document.getElementById()</code>, <code>document.querySelector()</code>, and <code>document.createElement()</code>. These methods allow you to select elements, modify attributes, and create new elements on the page.</p>
+        <p>To select an element from the DOM, you can use methods like document.getElementById() for unique IDs, document.querySelector() for selecting the first matching CSS selector, or document.querySelectorAll() to retrieve all matching elements. These methods enable efficient manipulation and interaction with specific elements in the document.</p>
       </div>
     </div>
 
     <!-- FAQ Item 3 -->
     <div class="bg-white rounded-lg shadow-md mb-4">
       <button class="w-full text-left p-4 font-semibold text-lg text-gray-800 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring focus:ring-indigo-300 transition duration-150" onclick="toggleFAQ('faq3')">
-        What is the difference between HTML and the DOM?
+        What is event delegation in the context of the DOM, and why is it useful?
       </button>
       <div id="faq3" class="p-4 text-gray-600 hidden">
-        <p>HTML is the language used to structure a web page. The DOM, on the other hand, is an in-memory representation of that structure. The DOM is created by the browser when an HTML page is loaded, allowing JavaScript to dynamically interact with and modify the page content.</p>
+        <p>Event delegation is a technique in the DOM that involves attaching a single event listener to a parent element instead of multiple listeners to child elements. This approach is useful because it improves performance by reducing memory usage and allows dynamic elements to inherit events, making it easier to manage interactions.</p>
       </div>
     </div>
 
     <!-- FAQ Item 4 -->
     <div class="bg-white rounded-lg shadow-md mb-4">
       <button class="w-full text-left p-4 font-semibold text-lg text-gray-800 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring focus:ring-indigo-300 transition duration-150" onclick="toggleFAQ('faq4')">
-        How can I add or remove elements in the DOM?
+        How do you manipulate an element's attributes and styles using the DOM?
       </button>
       <div id="faq4" class="p-4 text-gray-600 hidden">
-        <p>To add elements to the DOM, you can use methods such as <code>document.createElement()</code> to create a new element and <code>appendChild()</code> or <code>insertBefore()</code> to add it to the document. To remove elements, you can use <code>removeChild()</code> or the <code>remove()</code> method.</p>
-      </div>
-    </div>
-
-    <!-- FAQ Item 5 -->
-    <div class="bg-white rounded-lg shadow-md mb-4">
-      <button class="w-full text-left p-4 font-semibold text-lg text-gray-800 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring focus:ring-indigo-300 transition duration-150" onclick="toggleFAQ('faq5')">
-        What is event delegation in the DOM?
-      </button>
-      <div id="faq5" class="p-4 text-gray-600 hidden">
-        <p>Event delegation is a technique in which a single event listener is added to a parent element, and it handles events triggered by its child elements. Instead of adding multiple listeners to individual child elements, the parent element captures events bubbling up from its children, improving performance and code efficiency.</p>
+        <p>To manipulate an element's attributes and styles using the DOM, first access the element with methods like getElementById or querySelector. Then, use setAttribute to change attributes and the style property to modify CSS styles. You can also manage classes using classList methods for dynamic interactions.</p>
       </div>
     </div>
 
